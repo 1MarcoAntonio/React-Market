@@ -11,7 +11,14 @@ export default function Data() {
   return (
     <div className="container-grid">
       {product.map((p) => {
-        return <div></div>;
+        return (
+          <div className='product'>
+            <div className='thumb-div'>
+              <img className='p.thumb' src={p.thumbnail} alt="Logo" />
+            </div>
+          </div>
+
+        );
       })}
     </div>
   );
