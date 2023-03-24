@@ -1,5 +1,7 @@
 import "./GridProducts";
 
-const GridProducts = () => {};
+const GridProducts = () => {
+  return <div></div>;
+};
 
 export default GridProducts;
