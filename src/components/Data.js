@@ -14,8 +14,9 @@ export default function Data() {
         return (
           <div className='product'>
             <div className='thumb-div'>
-              <img className='p.thumb' src={p.thumbnail} alt="Logo" />
+              <img className='thumb' src={p.thumbnail} alt="Logo" />
             </div>
+            <p>{p.description}</p>
           </div>
 
         );
