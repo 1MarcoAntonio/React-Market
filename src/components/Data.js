@@ -1,5 +1,6 @@
 import api, { url } from "../data/api";
 import { useEffect, useState } from "react";
+import Products from "./Products";
 import "./Data.css";
 
 export default function Data() {
@@ -8,19 +9,5 @@ export default function Data() {
   useEffect(() => {
     api.get(url).then((res) => setProduct([...res.data.products]));
   }, []);
-  return (
-    <div className="container-grid">
-      {product.map((p) => {
-        return (
-          <div className='product'>
-            <div className='thumb-div'>
-              <img className='thumb' src={p.thumbnail} alt="Logo" />
-            </div>
-            <p>{p.description}</p>
-          </div>
-
-        );
-      })}
-    </div>
-  );
+  return <Products productData={product} />;
 }
