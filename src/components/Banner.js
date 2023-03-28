@@ -4,7 +4,7 @@ import "./Banner.css";
 import cart from "../assets/cart.png";
 import SideMenu from "./SideMenu";
 
-const Banner = () => {
+const Banner = (props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function toggleMenu() {
@@ -13,7 +13,7 @@ const Banner = () => {
 
   return (
     <>
-      {isMenuOpen && <SideMenu />}
+      {isMenuOpen && <SideMenu thumb={props.thumb} />}
       <div>
         <div className="banner">
           <button onClick={toggleMenu} className="cart-button">

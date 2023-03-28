@@ -32,15 +32,6 @@
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
   background-color: #a892ee;
   border: 1px solid #40005d;
-
-  transition: 0.15s;
-  cursor: pointer;
-}
-
-.product:hover,
-.product:active {
-  background-color: #870cc0;
-  border-color: #870cc0;
 }
 
 .product p {
@@ -63,5 +54,20 @@
 }
 
 .buy-img {
-  width: 20px;
+  width: 27px;
+}
+
+.buy-button {
+  cursor: pointer;
+  width: 50px;
+  align-self: center;
+  border-radius: 20px;
+  border-color: #870cc0;
+  transition: 0.15s;
+}
+
+.buy-button:active {
+  color: bisque;
+  background-color: #d6cfda;
+  border-color: #ab28e7;
 }

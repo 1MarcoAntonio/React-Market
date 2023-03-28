@@ -9,5 +9,5 @@ export default function Data() {
   useEffect(() => {
     api.get(url).then((res) => setProduct([...res.data.products]));
   }, []);
-  return <Products productData={product} />;
+  return <Products key={product.id} productData={product} />;
 }
