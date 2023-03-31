@@ -2,10 +2,10 @@ import "./SideMenu.css";
 const SideMenu = (props) => {
   return (
     <div className="side-menu">
-      {props.thumb && (
+      {props.bought && (
         <img
           className="thumb"
-          src={props.thumb.src}
+          src={props.bought.thumbnail}
           alt={props.thumb.alt}
         ></img>
       )}

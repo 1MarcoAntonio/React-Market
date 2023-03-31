@@ -11,9 +11,15 @@ const Banner = (props) => {
     setIsMenuOpen(!isMenuOpen);
   }
 
+  const data = {
+    thumbnail: props.thumb,
+    title: props.title,
+    price: +props.price,
+  };
+
   return (
     <>
-      {isMenuOpen && <SideMenu thumb={props.thumb} />}
+      {isMenuOpen && <SideMenu bought={data} />}
       <div>
         <div className="banner">
           <button onClick={toggleMenu} className="cart-button">
